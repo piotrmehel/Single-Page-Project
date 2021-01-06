@@ -1,0 +1,63 @@
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+}
+
+.nav-link :hover {
+  border-bottom: 2px solid red !important;
+}
+
+h3 {
+  font-weight: 100;
+  padding-left: 0.5rem;
+  padding-top: 0.3rem;
+}
+
+#hero {
+  background-image: url(../img/mountains.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  background-attachment: fixed;
+}
+
+.bg-success {
+  background-color: transparent !important;
+}
+
+@media (max-width: 768px) {
+  #main-nav {
+    height: 6.5rem;
+  }
+  .navbar {
+    padding-top: 0.8rem !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .nav-item {
+    padding-right: 1.7rem;
+    font-size: 1.3rem;
+  }
+  #main-nav {
+    height: 6.5rem;
+  }
+  .navbar {
+    padding-top: 1.2rem !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .nav-item {
+    padding-right: 2.3rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav-item {
+    padding-right: 2.8rem;
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
