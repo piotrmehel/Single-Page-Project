@@ -1,9 +1,32 @@
 $primary:#3292a6;
 .navbar-light .navbar-nav .nav-link{
-    color:black;
+    color:white;
 }
 .nav-link :hover{
     border-bottom:2px solid red !important;
+}
+#titi{
+    color:black;
+    border-color:black;
+    background-color:white
+}
+#togi{
+    
+    border:none;
+    padding:4.8px 0 0 8px;
+    font-size:1.5rem;
+    
+}
+.primary-overlay{
+    background: rgba(50,146,166,0.35);
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height: 50vh;
+}
+.navbar-light .navbar-toggler{
+    color:black;
 }
 h3{
     font-weight: 100;
@@ -15,7 +38,7 @@ h3{
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
-    height:500px;
+    height:50vh;
     background-attachment: fixed;
 }
 .bg-success{
