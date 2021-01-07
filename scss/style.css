@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .navbar-light .navbar-nav .nav-link {
   color: white;
 }
