@@ -2,7 +2,7 @@ const nav=document.querySelector("nav");
 const sectionOne=document.querySelector("#hero");
 
 const sectionOneOptions={
-    rootMargin:"-100px 0px 0px 0px"
+    rootMargin:"-168px 0px 0px 0px"
 };
 
 const sectionOneObserver=new IntersectionObserver(function(
