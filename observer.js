@@ -2,7 +2,7 @@ const nav=document.querySelector("nav");
 const sectionOne=document.querySelector("#hero");
 
 const sectionOneOptions={
-    rootMargin:"-168px 0px 0px 0px"
+    rootMargin:"-470px 0px 0px 0px"
 };
 
 const sectionOneObserver=new IntersectionObserver(function(
@@ -19,3 +19,12 @@ const sectionOneObserver=new IntersectionObserver(function(
 },sectionOneOptions);
 
 sectionOneObserver.observe(sectionOne);
+
+//typing animations
+
+const typed=new Typed(".typing",{
+    strings:["Rysy","Tarnice","Łysice"],
+    typeSpeed:100,
+    backSpeed:60,
+    loop:true
+});

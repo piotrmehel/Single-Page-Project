@@ -6,6 +6,25 @@ body, html {
   position: relative;
 }
 
+#main-button {
+  position: absolute;
+  top: 70vh;
+  border-radius: 3rem;
+}
+
+#main-text {
+  position: absolute;
+  color: black;
+  font-weight: 100;
+}
+
+#main-para {
+  position: absolute;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+
 .custom-shape-divider-bottom-1610023239 {
   position: absolute;
   bottom: 0;
@@ -100,6 +119,14 @@ h3 {
   #main-nav {
     height: 6.5rem;
   }
+  #main-text {
+    font-size: 3rem;
+    top: 40vh;
+  }
+  #main-para {
+    font-size: 2.3rem;
+    top: 47vh;
+  }
   .navbar {
     padding-top: 0.8rem !important;
   }
@@ -116,6 +143,17 @@ h3 {
   .navbar {
     padding-top: 1.2rem !important;
   }
+  #main-text {
+    font-size: 3.5rem;
+    top: 40vh;
+  }
+  #main-para {
+    font-size: 2.7rem;
+    top: 48vh;
+  }
+  #main-button {
+    top: 65vh;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -123,12 +161,34 @@ h3 {
     padding-right: 2.3rem;
     font-size: 1.4rem;
   }
+  #main-text {
+    font-size: 3.9rem;
+    top: 40vh;
+  }
+  #main-para {
+    font-size: 3.1rem;
+    top: 48vh;
+  }
+  #main-button {
+    top: 65vh;
+  }
 }
 
 @media (min-width: 1200px) {
   .nav-item {
     padding-right: 2.8rem;
     font-size: 1.5rem;
+  }
+  #main-text {
+    font-size: 4.2rem;
+    top: 40vh;
+  }
+  #main-para {
+    font-size: 3.2rem;
+    top: 49vh;
+  }
+  #main-button {
+    top: 65vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
