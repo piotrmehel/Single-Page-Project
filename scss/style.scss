@@ -2,6 +2,11 @@ $primary:#3292a6;
 .navbar-light .navbar-nav .nav-link{
     color:white;
 }
+.nav-scrolled{
+    background-color:$primary !important;
+    transition:background-color 300ms ease-in;
+    box-shadow:2px 2px 5px black;
+}
 .nav-link :hover{
     border-bottom:2px solid red !important;
 }
@@ -23,7 +28,7 @@ $primary:#3292a6;
     left:0;
     top:0;
     width:100%;
-    height: 50vh;
+    height: 70vh;
 }
 .navbar-light .navbar-toggler{
     color:black;
@@ -38,11 +43,12 @@ h3{
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
-    height:50vh;
+    height:70vh;
     background-attachment: fixed;
 }
-.bg-success{
-    background-color: transparent !important;
+.trans{
+    background-color: transparent;
+    transition:background-color 300ms ease-in;
 }
 @media(max-width:768px){
     #main-nav{
