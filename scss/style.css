@@ -2,6 +2,16 @@ body, html {
   overflow-x: hidden;
 }
 
+.fade-in {
+  opacity: 0;
+  -webkit-transition: opacity 250ms ease-in;
+  transition: opacity 250ms ease-in;
+}
+
+.appear {
+  opacity: 1 !important;
+}
+
 #waves {
   position: relative;
 }
