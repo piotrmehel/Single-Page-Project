@@ -1,12 +1,91 @@
 body,html{
     overflow-x:hidden;
 }
+// cookies
+.cookie-container{
+    position:fixed;
+    bottom:-100%;
+    left:0;
+    background-color: #2f3640;
+    color: #f5f6fa;
+    box-shadow: 0 -2px 16px #2f3640;
+    min-height: 4rem;
+    transition: 400ms;
+
+}
+.cookie-container.active{
+    bottom:0;
+}
+nav{
+    z-index: 5 !important;
+}
+.navbar-collapse{
+    position:fixed;
+    height: 50vh !important;
+    width: 100%;
+    left:0;
+    top:0;
+    background-color: black;
+    padding-top:60px;
+    font-size: 2rem;
+
+}
+.navbar-toggler{
+    z-index: 999;
+}
+// sliding thing
+.intro{
+    background:black;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 6;
+    
+}
+.intro-text{
+    color:rgb(233,233,233);
+    font-size:3rem;
+}
+.slider{
+    background:rgb(97,105,109);
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    transform: translateY(100%);
+    z-index: 7;
+}
+.hide{
+    background: black;
+    overflow: hidden;
+}
+.hide span{
+    transform:translateY(100%);
+    display: inline-block;
+}
 .fade-in{
     opacity:0;
     transition:opacity 250ms ease-in;
 }
 .appear{
     opacity: 1 !important;
+    transform: translateX(0) !important;
+}
+.from-left{
+    transform: translateX(-50%);
+    transition: opacity 250ms ease-in,transform 400ms ease-in;
+    opacity: 0;
+}
+.from-right{
+    transform: translateX(50%);
+    transition: opacity 250ms ease-in,transform 400ms ease-in;
+    opacity: 0;
 }
 #waves{
     position:relative;
@@ -79,6 +158,7 @@ $primary:#3292a6;
     border:none;
     padding:4.8px 0 0 8px;
     font-size:1.5rem;
+    cursor:pointer;
     
 }
 .primary-overlay{
@@ -127,6 +207,18 @@ h3{
     .navbar{
         padding-top:0.8rem !important;
     }
+    #cookie-btn{
+        width:4rem;
+        height: 2rem;
+        font-size: 0.6rem;
+    }
+    .cookie-container{
+        min-height: 2.6rem;
+        p{
+            font-size:0.7rem;
+        }
+    }
+    
 }
 @media(min-width:768px) and (max-width:992px){
     .nav-item{
@@ -150,6 +242,7 @@ h3{
     #main-button{
         top:65vh;
     }
+    
 }
 @media(min-width:992px) and (max-width:1200px){
     .nav-item{
@@ -184,4 +277,9 @@ h3{
     #main-button{
         top:65vh;
     }
+    .cookie-container{
+        font-size: 1.2rem;
+        min-height: 3rem;
+    }
+    
 }
