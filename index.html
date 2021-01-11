@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="scss/bootstrap.css">
     <link rel="stylesheet" href="scss/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous"></script>
-    <title>Hello, world!</title>
+    <title>Gabinet Fizjoterapeutyczny</title>
   </head>
   <body>
     
-    
+    <!-- navbar -->
+
     <nav class="navbar navbar-expand-md navbar-light trans fixed-top py-4" id="main-nav">
         <div class="container">
           <a href="#home" class="navbar-brand">
@@ -36,16 +37,16 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
             <ul class="navbar-nav">
               <li class="nav-item text-center">
-                <a href="#home" class="nav-link">Home</a>
+                <a href="#home" class="nav-link">Strona Główna</a>
               </li>
               <li class="nav-item text-center">
-                <a href="#about" class="nav-link">About</a>
+                <a href="#about" class="nav-link">O nas</a>
               </li>
               <li class="nav-item text-center">
-                <a href="#authors" class="nav-link">Authors</a>
+                <a href="#authors" class="nav-link">Personel</a>
               </li>
               <li class="nav-item text-center">
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#contact" class="nav-link">Kontakt</a>
               </li>
             </ul>
           </div>
@@ -64,6 +65,7 @@
             </div>
           </div>
         </section>
+
       <section id="elko">
         <div class="container-fluid">
             <div class="row">
@@ -86,6 +88,73 @@
         </div>
     </section>
 
+    <!-- kontakt section -->
+
+    <section id="contact" class="mt-5">
+        <div class="container">
+            <div class="row justify-content-center mb-4">
+                <div class="col-sm-4">
+                    <hr>
+                </div>
+                <div class="col-sm-2 text-center">
+                    <h2 id="contact-logo">Kontakt</h2>
+                </div>
+                <div class="col-sm-4">
+                    <hr>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4" id="contact-info">
+                    <p class="lead"><i class="far fa-envelope px-2"></i>e-mail: piotr.mehel@gmail.com</p>
+                    <p class="lead"><i class="fas fa-phone-volume px-2"></i>telefon: 691-116-178</p>
+                    <p>
+                        <a href="#" class="custom-icons"><i class="fab fa-facebook px-2"></i></a>
+                        <a href="#" class="custom-icons"><i class="fab fa-instagram px-2"></i></a>
+                        <a href="#" class="custom-icons"><i class="fab fa-youtube px-2"></i></a>
+                        <a href="#" class="custom-icons"><i class="fab fa-twitter px-2"></i></a>
+                    </p>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-1" id="vertical-rule"></div>
+                <div class="col-md-4 mb-3">
+                    <div class="form mb-3">
+                        <input type="text" name="name" autocomplete="off" required/>
+                        <label for="name" class="label-name">
+                            <span class="content-name">Imię</span>
+                        </label>
+                    </div>
+                    <div class="form mb-3">
+                        <input type="text" name="surname" autocomplete="off" required/>
+                        <label for="surname" class="label-name">
+                            <span class="content-name">Nazwisko</span>
+                        </label>
+                    </div>
+                    <div class="form mb-3">
+                        <input type="text" name="email" autocomplete="off" required/>
+                        <label for="email" class="label-name">
+                            <span class="content-name">E-mail</span>
+                        </label>
+                    </div>
+                    <div class="form mb-3">
+                        <input type="text" name="message" autocomplete="off" required/>
+                        <label for="message" class="label-name">
+                            <span class="content-name">Wiadomość</span>
+                        </label>
+                    </div>
+                    <div class="container mt-5">
+                        <div class="row justify-content-center text-center">
+                            <div class="col-lg-6">
+                                <button class="custom-button">Wyślij</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- cookie banner -->
 
     <div class="container-fluid cookie-container">
@@ -94,9 +163,7 @@
                     <p>Ta strona używa plików cookies. Pozostając na tej stronie, wyrażam zgodę na korzystanie z plików cookies.Więcej informacji w <a href="#">polityce prywatności.</a></p>
                 </div>
                 <div class="col-2">
-                    <button class="btn btn-success" id="cookie-btn">
-                        Akceptuję
-                    </button>
+                    <i class="fas fa-times" id="cookie-btn"></i>
                 </div>    
                     
             </div>
@@ -109,13 +176,13 @@
     <div class="intro">
         <div class="intro-text">
             <h1 class="hide">
-                <span class="text">Żadna góra</span>
+                <span class="text">Pozbądź się</span>
             </h1>
             <h1 class="hide">
-                <span class="text">Nie będzie Ci</span>
+                <span class="text">Bólu</span>
             </h1>
             <h1 class="hide">
-                <span class="text">Straszna...</span>
+                <span class="text">Już dziś...</span>
             </h1>
         </div>
     </div>

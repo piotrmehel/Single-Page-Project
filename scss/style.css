@@ -2,6 +2,10 @@ body, html {
   overflow-x: hidden;
 }
 
+#vertical-rule {
+  border-left: 1px solid black;
+}
+
 .cookie-container {
   position: fixed;
   bottom: -100%;
@@ -15,23 +19,122 @@ body, html {
   transition: 400ms;
 }
 
+#cookie-btn {
+  cursor: pointer;
+}
+
+.fas .fa-times {
+  height: 3rem !important;
+  width: 3rem !important;
+}
+
 .cookie-container.active {
   bottom: 0;
+}
+
+.form {
+  width: 100%;
+  height: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.form input {
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+  border: none;
+  outline: none;
+}
+
+.form label {
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+
+.form label::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -1px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #5fa8d3;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.content-name {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  -webkit-transition: all 0.3 ease-in;
+  transition: all 0.3 ease-in;
+}
+
+.form input:focus + .label-name .content-name,
+.form input:valid + .label-name .content-name {
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
+  font-size: 14px;
+  color: #5fa8d3;
+}
+
+.form input:focus + .label-name::after,
+.form input:valid + .label-name::after {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 
 nav {
   z-index: 5 !important;
 }
 
-.navbar-collapse {
-  position: fixed;
-  height: 50vh !important;
+hr {
+  opacity: 1;
+}
+
+.custom-button {
+  border: 1px solid #3498db;
+  background: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
   width: 100%;
+  color: #3498db;
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-button:hover {
+  color: #fff;
+}
+
+.custom-button::before {
+  content: '';
+  position: absolute;
   left: 0;
+  width: 100%;
+  height: 0%;
+  background: #3498db;
+  z-index: -1;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
   top: 0;
-  background-color: black;
-  padding-top: 60px;
-  font-size: 2rem;
+  border-radius: 0 0 50% 50%;
+}
+
+.custom-button:hover::before {
+  height: 180%;
 }
 
 .navbar-toggler {
@@ -194,6 +297,7 @@ nav {
   border: none;
   padding: 4.8px 0 0 8px;
   font-size: 1.5rem;
+  color: white;
   cursor: pointer;
 }
 
@@ -217,7 +321,7 @@ h3 {
 }
 
 #hero {
-  background-image: url(../img/mountains.jpg);
+  background-image: url(../img/fizjo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -251,7 +355,7 @@ h3 {
   }
   #cookie-btn {
     width: 4rem;
-    height: 2rem;
+    height: 3rem;
     font-size: 0.6rem;
   }
   .cookie-container {
@@ -259,6 +363,26 @@ h3 {
   }
   .cookie-container p {
     font-size: 0.7rem;
+  }
+  #contact-info {
+    text-align: center;
+  }
+  .navbar-collapse {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: #3498db;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-size: 2rem;
+    opacity: 0.7s;
+  }
+  .custom-button {
+    width: 50%;
+  }
+  #contact-logo {
+    font-size: 1.4rem !important;
   }
 }
 
