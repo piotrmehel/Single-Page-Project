@@ -11,6 +11,34 @@ body, html {
   margin: 0px;
 }
 
+#authors {
+  margin-bottom: 6rem;
+}
+
+#authors img {
+  margin-top: -50px;
+}
+
+#authors .card:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+#authors .card:hover .fab {
+  color: white;
+}
+
+#authors .fab {
+  color: #3498db;
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
+}
+
+#authors .fab:hover {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
 .cookie-container {
   position: fixed;
   bottom: -100%;

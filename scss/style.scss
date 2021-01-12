@@ -5,8 +5,29 @@ body,html{
 #vertical-rule{
     border-left: 1px solid black;;
 }
+
 .no-margins{
     margin:0px;
+}
+#authors{
+    margin-bottom: 6rem;
+    img{
+        margin-top:-50px;
+    }
+    .card:hover{
+        background-color: #3498db;
+        color:#fff;
+        .fab{
+            color:white;
+        }
+    }
+    .fab{
+        color:#3498db;
+        transition: 0.4s linear;
+    }
+    .fab:hover{
+        transform:scale(.8);
+    }
 }
 // cookies
 .cookie-container{
