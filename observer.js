@@ -52,7 +52,7 @@ sectionOneObserver.observe(sectionOne);
 //typing animations
 
 const typed=new Typed(".typing",{
-    strings:["Rysy","Tarnice","Łysice"],
+    strings:["pleców","kolana","biodra","łokcia","szyi"],
     typeSpeed:100,
     backSpeed:60,
     loop:true
@@ -81,3 +81,6 @@ setTimeout(()=>{
         cookieContainer.classList.add("active");
     }
 },7000);
+
+// Get the current year for the copyright
+$('#year').text(new Date().getFullYear());

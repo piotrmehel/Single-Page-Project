@@ -1,8 +1,12 @@
 body,html{
     overflow-x:hidden;
+    font-family: 'Montserrat', sans-serif;
 }
 #vertical-rule{
     border-left: 1px solid black;;
+}
+.no-margins{
+    margin:0px;
 }
 // cookies
 .cookie-container{
@@ -86,6 +90,7 @@ nav{
 }
 
 hr{
+    
     opacity:1;
 }
 
@@ -270,6 +275,22 @@ h3{
     font-weight: 100;
     padding-left:0.5rem;
     padding-top:0.3rem;
+}
+.fab,
+.fas,
+.far{
+    font-size:1.6rem;
+}
+// hover social media
+.social-hov{
+    transition: 0.4s linear;
+}
+.social-hov:hover{
+    transform:scale(0.8);
+}
+//end
+#policy-link{
+    color:white;
 }
 #hero{
     background-image: url(../img/fizjo.jpg);
