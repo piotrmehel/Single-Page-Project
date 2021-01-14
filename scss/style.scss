@@ -212,6 +212,7 @@ hr{
 #main-button{
     position:absolute;
     top:70vh;
+    left:42% !important;
     border-radius:3rem;
     
 }
@@ -263,9 +264,7 @@ hr{
     transition:background-color 300ms ease-in;
     box-shadow:2px 2px 5px black;
 }
-.nav-link :hover{
-    border-bottom:2px solid red !important;
-}
+
 #titi{
     color:black;
     border-color:black;
@@ -341,11 +340,18 @@ h3{
         font-size:3rem;
 
     }
-}
-@media(min-width:577px)and(max-width:768){
-    #contact-logo{
-        font-size:2.4rem !important;
+    #main-button{
+        left:27% !important;
     }
+}
+@media(min-width:577px)and(max-width:768px){
+    #contact-logo{
+        font-size:2.1rem !important;
+    }
+    #main-button{
+        left:30% !important;
+    }
+    
 }
 @media(max-width:768px){
     #main-nav{
@@ -361,6 +367,7 @@ h3{
     }
     #main-button{
         top:60vh;
+        left:37%;
     }
     .navbar{
         padding-top:0.8rem !important;
@@ -419,6 +426,7 @@ h3{
     }
     #main-button{
         top:65vh;
+        
     }
     #contact-logo{
         font-size:2.3rem !important;
