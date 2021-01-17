@@ -7,10 +7,6 @@ body, html {
   border-left: 1px solid black;
 }
 
-.logo {
-  z-index: 999;
-}
-
 nav {
   position: fixed;
   top: 0;
@@ -97,6 +93,9 @@ nav {
   .burger {
     display: block;
     cursor: pointer;
+  }
+  .logo img {
+    width: 170px !important;
   }
 }
 
