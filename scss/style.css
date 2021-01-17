@@ -7,6 +7,10 @@ body, html {
   border-left: 1px solid black;
 }
 
+.logo {
+  z-index: 999;
+}
+
 nav {
   position: fixed;
   top: 0;
