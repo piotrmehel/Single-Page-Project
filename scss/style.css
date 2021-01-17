@@ -517,7 +517,7 @@ h3 {
   background-image: url(../img/fizjo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: center;
   height: 90vh;
   background-attachment: fixed;
 }
@@ -596,6 +596,11 @@ h3 {
   }
   .custom-button {
     width: 50%;
+  }
+  #hero {
+    background-position: left;
+    background-attachment: scroll;
+    background-size: cover;
   }
 }
 
