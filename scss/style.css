@@ -19,7 +19,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 8vh;
+  min-height: 9vh;
 }
 
 .nav-links {
@@ -67,7 +67,7 @@ nav {
     position: fixed;
     right: 0px;
     height: 80vh;
-    top: 8vh;
+    top: 9vh;
     background-color: #03c6fc;
     display: -webkit-box;
     display: -ms-flexbox;
