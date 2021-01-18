@@ -176,6 +176,56 @@ nav {
           transform: scale(0.8);
 }
 
+#status {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 9px;
+  margin-top: 2rem;
+  color: white;
+}
+
+#status.submited {
+  background-color: #0cc012;
+  -webkit-animation: status 5s ease forwards;
+          animation: status 5s ease forwards;
+}
+
+#status.errorek {
+  background-color: rgba(236, 55, 0, 0.925);
+  -webkit-animation: status 5s ease forwards;
+          animation: status 5s ease forwards;
+}
+
+@-webkit-keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
 .cookie-container {
   position: fixed;
   bottom: -100%;
