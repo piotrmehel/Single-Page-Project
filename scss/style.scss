@@ -5,6 +5,18 @@ body,html{
 #vertical-rule{
     border-left: 1px solid black;;
 }
+.far.fa-smile{
+    font-size: 10rem;
+}
+//icons
+.icon-info{
+    border-top:2px solid black;
+    width:40%;
+    margin:0 auto;
+}
+.icon{
+    font-size: 1.1rem;
+}
 //navbar
 
 nav {
@@ -26,6 +38,10 @@ nav {
 
 .nav-links li {
     list-style: none;
+}
+
+.scroll:hover{
+    color:#fff900;
 }
 
 .nav-links a {
@@ -347,7 +363,8 @@ hr{
 #main-button{
     position:absolute;
     top:70vh;
-    left:42% !important;
+    left:50vw;
+    transform: translate(-50%,-50%);
     border-radius:3rem;
     
 }
@@ -475,18 +492,11 @@ h3{
         font-size:3rem;
 
     }
-    #main-button{
-        left:27% !important;
-    }
 }
 @media(min-width:577px)and(max-width:768px){
     #contact-logo{
         font-size:2.1rem !important;
     }
-    #main-button{
-        left:30% !important;
-    }
-    
 }
 @media(max-width:768px){
     #main-nav{
@@ -499,10 +509,6 @@ h3{
     #main-para{
         font-size:1.8rem;
         top:46vh;
-    }
-    #main-button{
-        top:60vh;
-        left:37%;
     }
     .navbar{
         padding-top:0.8rem !important;
@@ -569,10 +575,6 @@ h3{
         font-size:2.7rem;
         top:48vh;
     }
-    #main-button{
-        top:65vh;
-        
-    }
     #contact-logo{
         font-size:2.3rem !important;
     }
@@ -592,9 +594,6 @@ h3{
         font-size:3.1rem;
         top:48vh;
     }
-    #main-button{
-        top:65vh;
-    }
     #contact-logo{
         font-size:2.8rem !important;
     }
@@ -611,9 +610,6 @@ h3{
     #main-para{
         font-size:3.2rem;
         top:49vh;
-    }
-    #main-button{
-        top:65vh;
     }
     .cookie-container{
         font-size: 1.2rem;
