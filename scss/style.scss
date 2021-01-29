@@ -8,6 +8,19 @@ body,html{
 .far.fa-smile{
     font-size: 10rem;
 }
+.additional-line{
+    display:none;
+}
+.additional-line-1{
+    display:none;
+}
+.additional-line-2{
+    display:none;
+}
+.additional-line-3{
+    display:none;
+}
+
 //icons
 .icon-info{
     border-top:2px solid black;
@@ -439,6 +452,21 @@ hr{
     width:100%;
     height: 90vh;
 }
+.img-overlay{
+    position: relative;
+}
+.overlay{
+    background: rgba(3,198,252, 0.7);
+    opacity: 0.5;
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+
+}
+.oferta-title{
+    border-left:1px solid black;
+}
 .navbar-light .navbar-toggler{
     color:black;
 }
@@ -578,6 +606,23 @@ h3{
     #contact-logo{
         font-size:2.3rem !important;
     }
+    //oferta-text
+    .hide-info{
+        display: none;
+    }
+    .info-oferta{
+        font-size: 0.7rem;
+        margin-top:1rem !important;
+        margin-bottom:1rem !important;
+    }
+    .cena-oferta{
+        font-size: 0.8rem;
+        margin-top:1rem !important;
+        margin-bottom:1rem !important;
+    }
+    .additional-line{
+        display: block;
+    }
     
     
 }
@@ -597,6 +642,32 @@ h3{
     #contact-logo{
         font-size:2.8rem !important;
     }
+    //oferta-text
+    .hide-info{
+        display: none;
+    }
+    .info-oferta{
+        font-size: 1rem;
+        margin-top:1rem !important;
+        margin-bottom:1rem !important;
+    }
+    .cena-oferta{
+        font-size: 1.2rem;
+        margin-top:1rem !important;
+        margin-bottom:1rem !important;
+    }
+
+
+    .additional-line-1{
+        display: block;
+    }
+    .additional-line-2{
+        display: block;
+    }
+    .additional-line-3{
+        display: block;
+    }
+
 }
 @media(min-width:1200px){
     .nav-item{
@@ -618,5 +689,4 @@ h3{
     #contact-logo{
         font-size:3.1rem !important;
     }
-    
 }
