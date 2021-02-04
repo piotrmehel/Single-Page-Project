@@ -30,24 +30,12 @@ sliders.forEach(slider=>{
     appearOnScroll.observe(slider);
 })
 
-const sectionOneOptions={
-    rootMargin:"-470px 0px 0px 0px"
-};
 
-const sectionOneObserver=new IntersectionObserver(function(
-    entries,
-    sectionOneObserver
-){
-    entries.forEach(entry=>{
-        if(!entry.isIntersecting){
-            nav.classList.add("nav-scrolled");
-        }else{
-            nav.classList.remove("nav-scrolled");
-        }
-    });
-},sectionOneOptions);
+//change NAVBAR styles after scrolling
 
-sectionOneObserver.observe(sectionOne);
+window.addEventListener('scroll',function(){
+    nav.classList.toggle('nav-scrolled',window.scrollY > 0);
+});
 
 //typing animations
 
